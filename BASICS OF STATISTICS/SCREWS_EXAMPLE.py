@@ -36,12 +36,12 @@ Lengths_of_the_Screws_From_Supplier_A = (81  ,    70  ,    83   ,   72  ,    78 
 
 Lengths_of_the_Screws_From_Supplier_B = (80  ,    80  ,    80   ,   79  ,    79   ,   78   ,   81   ,   81   ,   80   ,   81)
 
-Average_A = np.mean(Lengths_of_the_Screws_From_Supplier_A)
+Average_Length_for_Screws_From_Supplier_A = np.mean(Lengths_of_the_Screws_From_Supplier_A)
 
-Average_B = np.mean(Lengths_of_the_Screws_From_Supplier_B)
+Average_Length_for_Screws_From_Supplier_B = np.mean(Lengths_of_the_Screws_From_Supplier_B)
 
-print ("<A> = ", Average_A)
+print ("<A> = ", Average_Length_for_Screws_From_Supplier_A)
 
-print ("<B> = ", Average_B)
+print ("<B> = ", Average_Length_for_Screws_From_Supplier_B)
 
 
