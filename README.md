@@ -1,4 +1,4 @@
-# BASICS_OF_STATISTICS_PYTHON
+# BASICS_OF_STATISTICS_WITH_PYTHON
 
 ## Some examples and exercises using python and its packages (pandas, numpy, matplotlib and others) to analyze data statistically
 
