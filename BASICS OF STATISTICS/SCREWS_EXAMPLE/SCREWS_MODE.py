@@ -1,6 +1,6 @@
 #######################################################################################################################################
 
-# Computation of the Mode ("Moda") for the data on the tables above:
+# Computation of the Mode ("Moda") for the data on the tables below:
 
 # Recall that the Mode is the value which occurs most often in an array (table, sample or finite population).
 
