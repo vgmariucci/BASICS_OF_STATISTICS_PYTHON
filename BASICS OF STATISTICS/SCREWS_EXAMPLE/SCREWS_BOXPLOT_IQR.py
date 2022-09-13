@@ -43,14 +43,14 @@ Lengths_of_the_Screws_From_Supplier_B = (80  ,    80  ,    80   ,   79  ,    79 
 # BUT WITH ANACONDA SPYDER IT WORKED NICELY
 ###############################################################################
 
-# # Create a dataframe before the construction of boxplots
-# df = pd.DataFrame({'Screws From supplier A': Lengths_of_the_Screws_From_Supplier_A,
-#                     'Screws From supplier B': Lengths_of_the_Screws_From_Supplier_B})
+# Create a dataframe before the construction of boxplots
+df = pd.DataFrame({'Screws From supplier A': Lengths_of_the_Screws_From_Supplier_A,
+                    'Screws From supplier B': Lengths_of_the_Screws_From_Supplier_B})
 
-# # View dataframe
-# print(df)
+# View dataframe
+print(df)
 
-# df.boxplot(column=['Screws From supplier A','Screws From supplier B'], grid = False, color = 'black')
+df.boxplot(column=['Screws From supplier A','Screws From supplier B'], grid = False, color = 'black')
 
 
 ###############################################################################

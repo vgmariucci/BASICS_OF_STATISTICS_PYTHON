@@ -39,7 +39,6 @@
 # The median tends to be more useful to calculate than the mean when a distribution is skewed and/or has outliers.
 ################################################################################################################
 
-import pandas as pd
 import numpy as np
 
 Lengths_of_the_Screws_From_Supplier_A = (81  ,    70  ,    83   ,   72  ,    78   ,   81   ,   81  ,    80   ,   80   ,  79)   # Array A
