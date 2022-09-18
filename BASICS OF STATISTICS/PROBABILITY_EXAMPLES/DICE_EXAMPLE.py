@@ -6,12 +6,15 @@
 # importando as bibliotecas
 import random 
 import pandas as pd
+from matplotlib import pyplot as plt
 
 #Criando uma lista com números de 1 a 6 com 200 elementos (tamanho igual a 200) 
-lista_numeros_dado_6_faces = [random.randint(1,6) for i in range(200)]
+lista_numeros_dado_6_faces ={'Faces': [random.randint(1,6) for i in range(200)]}
+
 
 #Passando a lista para um dataframe
-df = pd.DataFrame(data=lista_numeros_dado_6_faces, columns=['Face'])
+df = pd.DataFrame(data=lista_numeros_dado_6_faces, columns=['Faces'])
 
 #Colocando os dados em um histograma
 df.plot.hist(align = 'right', rwidth = 0.9, bins = 6, legend = False)
+plt.show()
