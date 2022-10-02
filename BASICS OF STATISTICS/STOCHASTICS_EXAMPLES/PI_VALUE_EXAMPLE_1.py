@@ -14,14 +14,14 @@ plt.plot(x_1 , vert, 'b')
 
 
 # Zera ("limpa") a contagem de gotas na área do círculo antes de começar a simulação 
-nc = 0
+n_in = 0
 
 # Variável de controle do comado while(), começa em i = 1 sendo incrementado até atingir o número total de gotas nc 
 i = 1
 
 # Informar quantas gotas de chuva (pontos aleatórios) serão considerados para a simulação
 # No JupyterLab informe diretamente o valor da variável n
-N = int(input("Informe o número de gotas de chuva (pontos aleatórios): "))
+N = 1000
 
 
 # Realiza a distribuição das gotas de chuva (pontos aleatórios) sobre a área do quadrado:
@@ -31,17 +31,18 @@ while ( i <= N ):
   y = random.random()
   
   # Se caiu uma gota dentro do círculo, então contabiliza essa gota e mostra a coordenada dela
-  if ((x**2) + (y**2)) <= 1:
-    nc += 1
-    plt.plot(x , y , 'go')
+  if np.sqrt((x**2) + (y**2)) <= 1:
+    n_in += 1
+    plt.plot(x , y , 'bo')
+    
   # Se caiu uma gota fora do círculo, paenas mostra onde ela caiu
   else:
     plt.plot(x , y , 'ro')
+  i += 1
 
-i += 1
 
 # Calcula o valor de pi estimado pela razão entre a quantidade de gotas dentro do círculo e o total de gotas
-pi = (4 * nc) / N
+pi = float ((4 * n_in) / N)
 
 print ("O valor de pi é: ", pi)
 
